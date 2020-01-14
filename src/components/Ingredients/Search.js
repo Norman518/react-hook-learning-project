@@ -3,7 +3,7 @@ import React from 'react';
 import Card from '../UI/Card';
 import './Search.css';
 
-const Search = React.memo(props => {
+const Search = React.memo(() => {
   return (
     <section className="search">
       <Card>
