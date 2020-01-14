@@ -9,8 +9,8 @@ const IngredientList = props => {
       <ul>
         {props.ingredients.map(ingredient => (
           <li key={ingredient.id} onClick={props.onRemoveIngredient.bind(this, ingredient.id)}>
-            <span>{ingredient.amount}x</span>
             <span>{ingredient.title}</span>
+            <span>x{ingredient.amount}</span>
           </li>
         ))}
       </ul>
